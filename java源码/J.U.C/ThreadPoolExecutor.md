@@ -77,7 +77,7 @@ ThreadPollExecutor有四个构造函数，但本质上都是调用这一个构�
     2. 尝试将任务放入工作队列，如果成功加入工作队列，当有工作线程空闲时会去工作队列中获取一个任务来执行；如果加入失败则执行步骤3.
     3. 判断线程数量是否已达到最大线程数量，如果没有则会通过线程工厂创建一个新的线程来执行任务；如果已达到最大线程数，则执行拒绝策略 
     
-![image](https://github.com/DespacitoYo/MyNotes/raw/master/images/background/car.png)
+![image](https://github.com/DespacitoYo/MyNotes/raw/master/images/J.U.C/ThreadPool.jpg)
 
 ## 3 源码分析
 
